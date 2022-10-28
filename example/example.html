@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Slider Gallery</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+	
+	<!-- Libs includes -->
+	<link rel="stylesheet" href="../lib/slider_gallery.css">
+	<script src="../lib/slider_gallery.js"></script>
+
+</head>
+<body>
+
+	<div class="block">
+		<div class="content">
+			<h1>Slider Gallery JS v0.1.1</h1>
+		</div>
+		<div class="content">
+			<p>
+				Slider Gallery JS is a simple use horisontal slider. <br>
+				Watch examples <a href="http://wilocod.ru/prj/slider_gallery">here</a>, <br> 
+				and documentation on <a href="https://github.com/dkh-gh/slider_gallery_js">github</a>.
+			</p>
+		</div>
+	</div>
+
+	<div class="block">
+
+		<div class="content">
+			<div class="slider_gallery" id="slider1">
+				<div class="slide" style="background-image: url(https://images.unsplash.com/photo-1666133619062-8c3621ba7322?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80)"></div>
+				<div class="slide" style="background-image: url(https://images.unsplash.com/photo-1666224182627-7dc792e4b419?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1615&q=80)"></div>
+				<div class="slide" style="background-image: url(https://images.unsplash.com/photo-1666166079252-607e0759766b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80)"></div>
+				<div class="slide" style="background-image: url(https://images.unsplash.com/photo-1666130819825-b822593e90bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80)"></div>
+				<div class="slide" style="background-image: url(https://images.unsplash.com/photo-1666121636787-7023d9ba4c80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)"></div>
+				<div class="slide" style="background-image: url(https://images.unsplash.com/photo-1666107730458-57486ae22a4c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)"></div>
+				<div class="slide" style="background-image: url(https://images.unsplash.com/photo-1665916712273-d5d74843683b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80)"></div>
+			</div>
+		</div>
+
+		<div class="content">
+			<div class="text">
+				<h2>#slider1</h2>
+				<p>default settings</p>
+				<p>
+					<span class="code_obj">slider1</span> = new <span class="code_obj">SliderGallery</span>( <br>
+					&nbsp;&nbsp;<span class="code_obj">document</span>.querySelector(<span class="code_text">'#slider1'</span>) <br>
+					);
+				</p>
+			</div>
+		</div>
+
+	</div>
+
+
+	<div class="block">
+		<div class="content reverse">
+
+			<div class="content-half">
+				<div class="text">
+					<h2>#slider2</h2>
+					<p>more space, no rotation, weak scaling, faster</p>
+					<p>
+						<span class="code_obj">slider2</span> = new <span class="code_obj">SliderGallery</span>(<br>
+						&nbsp;&nbsp;<span class="code_obj">document</span>.querySelector(<span class="code_text">'#slider2'</span>)<br>
+						);<br>
+						<span class="code_obj">slider2</span>.configure({<br>
+					  &nbsp;&nbsp;<span class="code_text">'slide_poses_count'</span>: <span class="code_num">3</span>,<br>
+					  &nbsp;&nbsp;<span class="code_text">'slide_max_rot_angle'</span>: <span class="code_num">0</span>,<br>
+					  &nbsp;&nbsp;<span class="code_text">'slide_min_scale':</span> <span class="code_num">.6</span>,<br>
+						});
+					</p>
+				</div>
+			</div>
+
+			<div class="content-half">
+				<div class="slider_gallery" id="slider2">
+					<div class="slide" style="background-image: url(https://images.unsplash.com/photo-1666133619062-8c3621ba7322?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80)"></div>
+					<div class="slide" style="background-image: url(https://images.unsplash.com/photo-1666224182627-7dc792e4b419?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1615&q=80)"></div>
+					<div class="slide" style="background-image: url(https://images.unsplash.com/photo-1666166079252-607e0759766b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80)"></div>
+					<div class="slide" style="background-image: url(https://images.unsplash.com/photo-1666130819825-b822593e90bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80)"></div>
+					<div class="slide" style="background-image: url(https://images.unsplash.com/photo-1666121636787-7023d9ba4c80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)"></div>
+					<div class="slide" style="background-image: url(https://images.unsplash.com/photo-1666107730458-57486ae22a4c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)"></div>
+					<div class="slide" style="background-image: url(https://images.unsplash.com/photo-1665916712273-d5d74843683b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80)"></div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<div class="block">
+		<div class="content">
+			
+			<div class="content-half">
+				<div class="slider_gallery" id="slider3">
+					<div class="slide" style="background-image: url(https://images.unsplash.com/photo-1666133619062-8c3621ba7322?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80)"></div>
+					<div class="slide" style="background-image: url(https://images.unsplash.com/photo-1666224182627-7dc792e4b419?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1615&q=80)"></div>
+					<div class="slide" style="background-image: url(https://images.unsplash.com/photo-1666166079252-607e0759766b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80)"></div>
+					<div class="slide" style="background-image: url(https://images.unsplash.com/photo-1666130819825-b822593e90bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80)"></div>
+					<div class="slide" style="background-image: url(https://images.unsplash.com/photo-1666121636787-7023d9ba4c80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)"></div>
+					<div class="slide" style="background-image: url(https://images.unsplash.com/photo-1666107730458-57486ae22a4c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)"></div>
+					<div class="slide" style="background-image: url(https://images.unsplash.com/photo-1665916712273-d5d74843683b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80)"></div>
+				</div>
+			</div>
+
+			<div class="content-half">
+				<div class="text">
+					<h2>#slider3</h2>
+					<p>page turning</p>
+					<p>
+						<span class="code_obj">slider3</span> = new <span class="code_obj">SliderGallery</span>(<br>
+						&nbsp;&nbsp;<span class="code_obj">document</span>.querySelector(<span class="code_text">'#slider3'</span>)<br>
+						);<br>
+						<span class="code_obj">slider2</span>.configure({<br>
+					  &nbsp;&nbsp;<span class="code_text">'slide_poses_count'</span>: <span class="code_num">3</span>,<br>
+					  &nbsp;&nbsp;<span class="code_text">'slide_max_rot_angle'</span>: <span class="code_num">110</span>,<br>
+					  &nbsp;&nbsp;<span class="code_text">'slide_min_scale':</span> <span class="code_num">.5</span>,<br>
+				    &nbsp;&nbsp;<span class="code_text">'reverse_rotation'</span>: <span class="code_num">true</span>,<br>
+				    &nbsp;&nbsp;<span class="code_text">'perspective'</span>: <span class="code_num">750</span>,<br>
+				    &nbsp;&nbsp;<span class="code_text">'transition'</span>: <span class="code_num">.5</span>,<br>
+						});
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+</body>
+</html>
